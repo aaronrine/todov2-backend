@@ -1,0 +1,37 @@
+POST http://localhost:8000/todos/create/ HTTP/1.1
+content-type: application/json
+
+{
+    "marked": "true",
+    "text": "get milk",
+    "priority": "3",
+    "sortOrder": "3"
+}
+
+
+###
+GET http://localhost:8000/todos/ HTTP/1.1
+content-type: application/json
+
+###
+PUT http://localhost:8000/todos/ HTTP/1.1
+content-type: application/json
+
+{
+    "id": "jfkd",
+    "marked": "true",
+    "text": "get hot dogs",
+    "priority": "3",
+    "sortOrder": "3"
+}
+###
+DELETE http://localhost:8000/todos/null/ HTTP/1.1
+content-type: application/json
+
+###
+POST http://localhost:8000/todos/sort/ HTTP/1.1
+content-type: application/json
+
+{
+    "todo_ids": [ "jfkf", "jfkd", "jfke" ]
+}
