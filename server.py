@@ -4,6 +4,8 @@ from typing import Optional, List
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 
+#TODO: Link with database
+#TODO: add users and userauth
 
 class Todo(BaseModel):
     id: Optional[str] = None
